@@ -1,7 +1,7 @@
 body {
-    /*Sets the font size, background color, and aligns the text for the body*/
+    /*Sets the font family, background color, and aligns the text for the body*/
     font-family: Arial, sans-serif; /*Sets the font to sans-serif if Arial isn't available*/
-    background-color: #92f298; //light green color
+    background-color: #92f298; /*light green color*/
     text-align: center;
   }
   
@@ -42,16 +42,16 @@ body {
     padding: 10px; 
     border: none; /*Removes borders*/
     border-radius: 4px; /*Rounds the corners*/
-    cursor: pointer; /*Changes the mouse to a pointer*/
+    cursor: pointer; /*Changes mouse cursor to pointer to indicate clickability*/
     margin-top: 10px;
     width: 100%; /*Expands the button to fit the form*/
   }
   
   button:hover {
-    background: #0056b3; /*Changes the background to a dark blue when hovering to show when it is being hovered*/
+    background: #0056b3; /*Changes the background to a dark blue when hovering for visual feedback*/
   }
-  /*Used for mobile viewing, Applies only when the screen is 500px or less
-    Improves mobile usability by making sure that the form is not wider than 90% of the screen*/
+  /*Used for mobile viewing, Applies only when the screen is 500px or less*/
+    /*Improves mobile usability by making sure that the form is not wider than 90% of the screen*/
   @media (max-width: 500px) {
     form {
       width: 90%;
