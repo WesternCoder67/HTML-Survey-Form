@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--Links the stylesheet for customization-->
+        <!--Links external CSS stylesheet for styling the form-->
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!--Creates the header and a description of the header that the survey is about-->
+        <!--Header section containing title and description of the survey-->
         <header>
             <h1 id="title" class="title-heading">Golf Brand Survey Form</h1>
             <p id="description" class="description" title="heading">Which type of golf brand do you typically use?</p>
         </header>
-        <!--Div elements are used to split up each box or text in order to style them separately within the styles.css sheet-->
+        <!--Form container for grouping and styling sections-->
         <div class="container">
             <!--This is used to indicate the start of the survey form and sections off the main survey from the header-->
         <form id="survey-form">
-            <!--Creates a label for a textbox for the user to enter their name. Is set to require this to be filled out with the "required" element-->
+            <!--Name input field with required validation-->
             <div class="group">
                 <label id="name-label" for="name">Name</label><input id="name" type="text" placeholder="Enter your name" value="" required>
             </div>
-            <!--Creates a label for a textbox for the user to enter their email. Is set to require this to be filled out with the "required" element-->
+            <!--Email input field with required validation-->
             <div class="group">
                 <label id="email-label" for="email">Email</label><input id="email" type="email" placeholder="Enter your email" value="" required>
             </div>
-            <!--Creates a label for a textbox for the user to enter their age. Has a max of 99 and a min of 18 and is set to require this to be filled out with the "required" element-->
+            <!--Age input field with required validation-->
             <div class="group">
                 <label id="number-label" for="number">Age</label><input id="number" type="number" min="18" max="99" placeholder="Enter your age" value="" required>
             </div>
-            <!--Creates a Dropdown group element with 7 options that asks what type of brand of golf club is preferred-->
+            <!--Dropdown menu with 7 golf club brand options-->
             <div class="group">
                 <p>Which is your preferred brand of golf club?</p>
                 <select id="dropdown" name="option">
@@ -64,12 +64,12 @@
                 <input name="Preference" value="Low-Cost" type="checkbox" class="chkbx" id="Low-Cost"><label for="Low-Cost">Low-Cost</label>
             
                 <input name="Preference" value="Forgiving-Clubs" type="checkbox" id="Forgiving-Clubs" class="chkbx"><label for="Forgiving-Clubs">Forgiving Clubs</label>
-                <!--Creates alternative textbox option for the checkboxes if none of them apply for the user to enter their own-->
-                <h3>Other</h3>
+                <!--Optional text field for other preferences-->
+                <p>Other</p>
                 <label for="other-preference">Please specify:</label>
                 <input id="other-preference" name="Preference" type="text" class="textbox">
             </div>
-              <!--Creates a group to style the input box and label using the stylesheet-->
+              <!--Textarea for additional brand interes-->
         <div class="group">
             <label for="interests">Additional Brand Interests?</label>
             <textarea id="interests" class="textarea" placeholder="Brands you are interested in..."></textarea>
