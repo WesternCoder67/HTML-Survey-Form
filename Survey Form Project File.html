@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        //Links the stylesheet for customization
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        //Creates the header and a description of the header that the survey is about
         <header>
             <h1 id="title" class="title-heading">Golf Brand Survey Form</h1>
-            <p id="description" class="description title-heading">Which type of golf brand do you typically use?</p>
+            <p id="description" class="description" title="heading">Which type of golf brand do you typically use?</p>
         </header>
+        //Div elements are used to split up each box or text in order to style them separately within the styles.css sheet
         <div class="container">
+            //This is used to indicate the start of the survey form and sections off the main survey from the header
         <form id="survey-form">
+            //Creates a label for a textbox for the user to enter their name. Is set to require this to be filled out with the "required" element
             <div class="group">
                 <label id="name-label" for="name">Name</label><input id="name" type="text" placeholder="Enter your name" value="" required>
             </div>
+            //Creates a label for a textbox for the user to enter their email. Is set to require this to be filled out with the "required" element
             <div class="group">
                 <label id="email-label" for="email">Email</label><input id="email" type="email" placeholder="Enter your email" value="" required>
             </div>
+            //Creates a label for a textbox for the user to enter their age. Has a max of 99 and a min of 18 and is set to require this to be filled out with the "required" element
             <div class="group">
                 <label id="number-label" for="number">Age</label><input id="number" type="number" min="18" max="99" placeholder="Enter your age" value="" required>
             </div>
-
+            //Creates a Dropdown group element with 7 options that asks what type of brand of golf club is preferred
             <div class="group">
                 <p>Which is your preferred brand of golf club?</p>
                 <select id="dropdown" name="option">
@@ -32,8 +39,9 @@
                 <option value="Other">Other</option>
             </select>
             </div>
-
+            //Creates a group for the radio boxes so that they can be styled together in the stylesheet
             <div class="group">
+                //Creates a radiobox with a default option of "Very" checked, and links the label with the input with the "for" element
                 <p>How likely would you be willing to recommend this brand to a friend?</p>
                 <input name="radio" type="radio" value="Very" id="Very" checked>
                 <label for="Very">Very</label>
@@ -45,22 +53,22 @@
                 <input name="radio" type="radio" value="Not-Really" id="Not-Really"><label for="Not-Really">Not Really</label>
                 <input name="radio" type="radio" value="Definitely-Not" id="Definitely-Not"><label for="Definitely-Not">Definitely Not</label>
             </div>
-
+            //Creates a group to style the checkboxes the same using the stylesheet
             <div class="group">
+                //Creates a set of checkboxes that can be used to check all that apply to the question.
                 <p>What are some of the qualities that you like about any particular golf brand?</p>
                 <input name="Preference" value="High-Quality-Materials" type="checkbox" class="chkbx" id="High-Quality-Materials"><label for="High-Quality-Materials">High-Quality Materials</label>
-
             
                 <input name="Preference" value="Trustworthy-Brand" type="checkbox" class="chkbx" id="Trustworthy-Brand"><label for="Trustworthy-Brand">Trustworthy Brand</label>
         
                 <input name="Preference" value="Low-Cost" type="checkbox" class="chkbx" id="Low-Cost"><label for="Low-Cost">Low-Cost</label>
             
                 <input name="Preference" value="Forgiving-Clubs" type="checkbox" id="Forgiving-Clubs" class="chkbx"><label for="Forgiving-Clubs">Forgiving Clubs</label>
-
+                //Creates alternative textbox option for the checkboxes if none of them apply for the user to enter their own
                 <h3>Other</h3>
                 <label for="other-preference">Please specify:</label>
                 <input id="other-preference" name="Preference" type="text" class="textbox">
-        </div>
+            </div>
         <div class="group">
             <label for="interests">Additional Brand Interests?</label>
             <textarea id="interests" class="textarea" placeholder="Brands you are interested in..."></textarea>
@@ -69,7 +77,7 @@
         <div class="group">
             <input type="submit" id="submit" value="Submit">
         </div>
-
+        </div>
     </form>
     </body>
 </html>
