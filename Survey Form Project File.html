@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title" class="title-heading">Golf Brand Survey Form</h1>
+            <p id="description" class="description title-heading">Which type of golf brand do you typically use?</p>
+        </header>
+        <div class="container">
+        <form id="survey-form">
+            <div class="group">
+                <label id="name-label" for="name">Name</label><input id="name" type="text" placeholder="Enter your name" value="" required>
+            </div>
+            <div class="group">
+                <label id="email-label" for="email">Email</label><input id="email" type="email" placeholder="Enter your email" value="" required>
+            </div>
+            <div class="group">
+                <label id="number-label" for="number">Age</label><input id="number" type="number" min="18" max="99" placeholder="Enter your age" value="" required>
+            </div>
+
+            <div class="group">
+                <p>Which is your preferred brand of golf club?</p>
+                <select id="dropdown" name="option">
+                <option value="Titleist">Titleist</option>
+                <option value="Callaway">Callaway</option>
+                <option value="Taylormade">Taylormade</option>
+                <option value="Ping">Ping</option>
+                <option value="Cobra">Cobra</option>
+                <option value="Srixon">Srixon</option>
+                <option value="Other">Other</option>
+            </select>
+            </div>
+
+            <div class="group">
+                <p>How likely would you be willing to recommend this brand to a friend?</p>
+                <input name="radio" type="radio" value="Very" id="Very" checked>
+                <label for="Very">Very</label>
+
+                <input name="radio" type="radio" id ="Somewhat" value="Somewhat">
+                <label for="Somewhat">Somewhat</label>
+                <input name="radio" type="radio" id="Not-Sure" value="Not-Sure"><label for="Not-Sure">Not Sure</label>
+
+                <input name="radio" type="radio" value="Not-Really" id="Not-Really"><label for="Not-Really">Not Really</label>
+                <input name="radio" type="radio" value="Definitely-Not" id="Definitely-Not"><label for="Definitely-Not">Definitely Not</label>
+            </div>
+
+            <div class="group">
+                <p>What are some of the qualities that you like about any particular golf brand?</p>
+                <input name="Preference" value="High-Quality-Materials" type="checkbox" class="chkbx" id="High-Quality-Materials"><label for="High-Quality-Materials">High-Quality Materials</label>
+
+            
+                <input name="Preference" value="Trustworthy-Brand" type="checkbox" class="chkbx" id="Trustworthy-Brand"><label for="Trustworthy-Brand">Trustworthy Brand</label>
+        
+                <input name="Preference" value="Low-Cost" type="checkbox" class="chkbx" id="Low-Cost"><label for="Low-Cost">Low-Cost</label>
+            
+                <input name="Preference" value="Forgiving-Clubs" type="checkbox" id="Forgiving-Clubs" class="chkbx"><label for="Forgiving-Clubs">Forgiving Clubs</label>
+
+                <h3>Other</h3>
+                <label for="other-preference">Please specify:</label>
+                <input id="other-preference" name="Preference" type="text" class="textbox">
+        </div>
+        <div class="group">
+            <label for="interests">Additional Brand Interests?</label>
+            <textarea id="interests" class="textarea" placeholder="Brands you are interested in..."></textarea>
+        </div>
+
+        <div class="group">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+
+    </form>
+    </body>
+</html>
